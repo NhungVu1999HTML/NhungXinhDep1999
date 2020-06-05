@@ -20,6 +20,8 @@ namespace lab44.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        public DbSet<Course> Courses { set; get; }
+        public DbSet<Category> Categories { set; get; }
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
