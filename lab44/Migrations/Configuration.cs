@@ -10,6 +10,7 @@ namespace lab44.Migrations
         public Configuration()
         {
 
+
             AutomaticMigrationsEnabled = false;
         }
 
